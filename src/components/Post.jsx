@@ -5,7 +5,7 @@ const Post = (props) => {
     return (
         <div>
             <div className="post">
-                <strong>{props.number}. {props.post.title}</strong>
+                <strong>{props.post.id}. {props.post.title}</strong>
                 <div className="description">
                     {props.post.body}
                 </div>
