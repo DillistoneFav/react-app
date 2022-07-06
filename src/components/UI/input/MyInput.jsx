@@ -3,7 +3,7 @@ import styles from './myInput.module.css';
 
 const MyInput = (props) => {
     return (
-        <input className={styles.MyInput} {...props}></input>
+        <input className={styles.myInput} {...props}></input>
     );
 };
 

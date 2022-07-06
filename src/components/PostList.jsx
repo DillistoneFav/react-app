@@ -3,6 +3,12 @@ import Post from './Post';
 
 const PostList = ({posts, title, remove}) => {
 
+    if (!posts.length) {
+        return (
+            <h1>Посты не найдены!</h1>
+        )
+    }
+
     return (
         <div>
             <h1>{title}</h1>
