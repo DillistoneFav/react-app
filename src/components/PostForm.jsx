@@ -4,18 +4,18 @@ import MyInput from './UI/input/MyInput';
 import { useState } from 'react';
 
 const PostForm = ({create}) => {
-    const [post, setPost] = useState({title: '', description:''});
+    const [post, setPost] = useState({title: '', body:''});
 
     const addNewPost = (event) => {
         event.preventDefault();
 
-        if (post.title !== '' && post.description !== '') {
+        if (post.title !== '' && post.body !== '') {
 
         const newPost = {
             ...post, id: Date.now(),
         }
         create(newPost);
-        setPost({title: '', description: ''});
+        setPost({title: '', body: ''});
     };
 };
 
@@ -26,8 +26,8 @@ const PostForm = ({create}) => {
           value={post.title} 
           placeholder="Заголовок поста"/>
         <MyInput 
-          onChange={(event) => {setPost({...post, description: event.target.value})}} 
-          value={post.description} 
+          onChange={(event) => {setPost({...post, body: event.target.value})}} 
+          value={post.body} 
           placeholder="Описание поста"/>
         <MyButton onClick={addNewPost}>Создать</MyButton>
       </form>
