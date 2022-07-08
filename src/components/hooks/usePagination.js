@@ -7,7 +7,7 @@ export const usePagination = (totalPages, limit) => {
             result.push(i+1);
         }
         return result;
-    },[totalPages, limit])
+    },[totalPages])
     
     return fillArray;
 }

@@ -6,10 +6,9 @@
 .App{
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
 .post{
@@ -21,6 +20,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.functionsWithPosts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
 }
 
 .post strong{
@@ -52,19 +58,68 @@
 .pag{
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     width: 1000px;
     margin-top: 20px;
 }
 
 .pagSpan{
+    margin-top: 5px;
     font-size: 20px;
     border: 1px solid teal;
     padding: 2px 5px;
     margin-right: 5px;
     cursor: pointer;
+    width: 20px;
+    text-align: center;
 }
 
 .currentPage{
     border: 1px solid red;
     font-weight: bold;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 20px 7px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 20px 7px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 20px 7px rgba(34, 60, 80, 0.2);
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.navbarItems{
+    width: 500px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .RouterLinks{
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+}
+
+.navbar .RouterLinks:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+  }
+
+.selectRowsCount{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 1000px;
 }

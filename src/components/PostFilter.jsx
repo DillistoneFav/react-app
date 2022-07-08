@@ -7,6 +7,7 @@ const PostFilter = ({filter, setFilter}) => {
     return (
         <div className={classes.filter}>
             <MyInput
+                style={{marginRight: '25px'}}
                 placeholder="Поиск"
                 value={filter.query}
                 onChange={event => setFilter({...filter, query: event.target.value})}

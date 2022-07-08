@@ -1,7 +1,6 @@
 .filter{
+    width: 350px;
     margin: 20px 0;
-    width: 500px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
