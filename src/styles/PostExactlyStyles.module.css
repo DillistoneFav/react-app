@@ -1,0 +1,31 @@
+.postComments{
+    width: 1000px;
+}
+
+.comment{
+    margin-top: 15px;
+    border-bottom: 1px solid teal;
+}
+
+.commentEmail{
+    font-size: 20px;
+    text-decoration: underline !important;
+}
+
+.commentBody{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.commentsBlock{
+    border: 2px solid teal;
+    padding: 20px;
+}
+
+.comment:first-child{
+    margin-top: 0px;
+}
+
+.comment:last-child{
+    border-bottom: none;
+}

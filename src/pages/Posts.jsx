@@ -46,7 +46,7 @@ function Posts() {
     <div className="App">
         <div className="functionsWithPosts">
             <MyModal visible={modal} setVisible={setModal}>
-            <PostForm create={createPost}/>
+              <PostForm create={createPost}/>
             </MyModal>
             <PostFilter
                 filter={filter}

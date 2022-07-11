@@ -12,7 +12,27 @@ export default class PostService {
             return response;
         }
         catch(exception) {
-            alert('Error: ' + exception.message);
+            console.log('Error: ' + exception.message);
+        }
+    }
+
+    static async getByID(id) {
+        try {
+            const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+            return response;
+        }
+        catch(exception) {
+            console.log('Error: ' + exception.message);
+        }
+    }
+
+    static async getCommentsByPostID(id) {
+        try {
+            const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
+            return response;
+        }
+        catch(exception) {
+            console.log('Error: ' + exception.message);
         }
     }
 }
