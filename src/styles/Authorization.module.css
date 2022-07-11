@@ -1,0 +1,20 @@
+.authPage{
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 150px;
+    justify-content: space-between;
+    border: 5px solid teal;
+    width: 200px;
+    padding: 20px 0;
+}
